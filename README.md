@@ -1,8 +1,5 @@
 # Sparse unmixing via variable splitting and augmented Lagrangian methods (SUNSAL)
 
-Translation in Python of the Sparse unmixing via variable splitting and augmented Lagrangian methods to perform spectral unmixing given an endmembers matrix and an hyperspectral image.
-
-
 ## Description
 
 SUNSAL solves the following l2-l1 optimization  problem
