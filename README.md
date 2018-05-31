@@ -8,9 +8,9 @@ Translation in Python of the Sparse unmixing via variable splitting and augmente
 SUNSAL solves the following l2-l1 optimization  problem
 [size(M) = (L,p); size(X) = (p,N)]; size(Y) = (L,N)]
 
-min_X  (1/2) ||M X-y||^2_F + lambda ||X||_1
+	min_X  (1/2) ||M X-y||^2_F + lambda ||X||_1
 
-where ||X||\_1 = sum_i sum_j |X_{i,j}|.
+	where ||X||\_1 = sum_i sum_j |X_{i,j}|.
 
 CONSTRAINTS ACCEPTED:
 
@@ -40,9 +40,9 @@ NOTES:
 
 SUNSAL solves the above optimization problem by introducing a variable splitting and then solving the resulting constrained optimization with the augmented Lagrangian method of multipliers (ADMM).
 
-min_{X,Z}  (1/2) ||M X-y||^2_F + lambda ||Z||_1
+	min_{X,Z}  (1/2) ||M X-y||^2_F + lambda ||Z||_1
 
-subject to: X_j = 1 for all j; Z >= 0; X = Z
+	subject to: X_j = 1 for all j; Z >= 0; X = Z
 
 Augmented Lagrangian (scaled version):
 
