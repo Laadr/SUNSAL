@@ -7,7 +7,7 @@ SUNSAL solves the following l2-l1 optimization  problem
 
 	min_X  (1/2) ||M X-y||^2_F + lambda ||X||_1
 
-	where ||X||\_1 = sum_i sum_j |X_{i,j}|.
+	where ||X||_1 = sum_i sum_j |X_{i,j}|.
 
 CONSTRAINTS ACCEPTED:
 
