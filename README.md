@@ -12,7 +12,7 @@ SUNSAL solves the following l2-l1 optimization  problem
 CONSTRAINTS ACCEPTED:
 
 1) POSITIVITY:  X >= 0;
-2) ADDONE:  sum_j X_{i,j} = 1 for all j;
+2) ADDONE:  sum_j X_{i,j} = 1 for all i;
 
 NOTES:
   1) The optimization w.r.t each column of X is decoupled. Thus, SUNSAL solves N simultaneous problems.
@@ -39,7 +39,7 @@ SUNSAL solves the above optimization problem by introducing a variable splitting
 
 	min_{X,Z}  (1/2) ||M X-y||^2_F + lambda ||Z||_1
 
-	subject to: sum_j X_{i,j} for all j; Z >= 0; X = Z
+	subject to: sum_j X_{i,j} for all i; Z >= 0; X = Z
 
 Augmented Lagrangian (scaled version):
 
